@@ -14,8 +14,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="48" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="42" fill="1" visible="yes" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
@@ -243,6 +243,87 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-8.89" y="-4.191" radius="1.0668" width="0" layer="30"/>
 <circle x="-8.89" y="-1.905" radius="0.508" width="0.254" layer="21"/>
 </package>
+<package name="DIL-08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
+<circle x="-2.7813" y="-1.5748" radius="0.1436" width="0.2032" layer="21"/>
+<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
+<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
+<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
+<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
+<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
+<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
+<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
+<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="DIP08-KIT">
+<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
+<circle x="-3.81" y="-1.905" radius="0.508" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="4" x="3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="5" x="3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="6" x="1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="7" x="-1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="8" x="-3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<text x="-3.175" y="-0.635" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-5.715" y="-3.81" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<circle x="-3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<text x="-3.175" y="-0.635" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.016" x2="-5.08" y2="1.016" width="0.2032" layer="21" curve="180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="556_TIMER_DUAL">
@@ -266,6 +347,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="THR2" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="DIS2" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="VCC" x="15.24" y="7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="NE555">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="TRE" x="-10.16" y="7.62" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
+<pin name="DIS" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="TRI" x="-10.16" y="-7.62" length="short" direction="in"/>
+<pin name="VCC+" x="10.16" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="CON" x="10.16" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="/RES" x="10.16" y="5.08" length="short" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -316,6 +413,66 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="556" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NE555" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;General purpose bipolar Timer&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NE555" x="60.96" y="-27.94"/>
+</gates>
+<devices>
+<device name="P" package="DIL-08">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Arrow Electronics" constant="no"/>
+<attribute name="MPN" value="NE555N" constant="no"/>
+<attribute name="OC_FARNELL" value="1467742" constant="no"/>
+<attribute name="OC_NEWARK" value="89K1486" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="DIP08-KIT">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11930" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12494,125 +12651,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="linear">
-<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
-Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
-NS Package M08A</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="555">
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.827" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="TR" x="-10.16" y="7.62" length="short" direction="in"/>
-<pin name="Q" x="10.16" y="7.62" length="short" direction="out" rot="R180"/>
-<pin name="R" x="-10.16" y="2.54" length="short" direction="in" function="dot"/>
-<pin name="CV" x="-10.16" y="-2.54" length="short" direction="in"/>
-<pin name="THR" x="10.16" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="DIS" x="10.16" y="2.54" length="short" direction="in" rot="R180"/>
-<pin name="V+" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short" direction="pwr"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="*555" prefix="IC">
-<description>&lt;b&gt;TIMER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="555" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="N" package="DIL08">
-<connects>
-<connect gate="A" pin="CV" pad="5"/>
-<connect gate="A" pin="DIS" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="Q" pad="3"/>
-<connect gate="A" pin="R" pad="4"/>
-<connect gate="A" pin="THR" pad="6"/>
-<connect gate="A" pin="TR" pad="2"/>
-<connect gate="A" pin="V+" pad="8"/>
-</connects>
-<technologies>
-<technology name="LM"/>
-<technology name="NE"/>
-<technology name="SE"/>
-<technology name="UA"/>
-</technologies>
-</device>
-<device name="D" package="SO08">
-<connects>
-<connect gate="A" pin="CV" pad="5"/>
-<connect gate="A" pin="DIS" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="Q" pad="3"/>
-<connect gate="A" pin="R" pad="4"/>
-<connect gate="A" pin="THR" pad="6"/>
-<connect gate="A" pin="TR" pad="2"/>
-<connect gate="A" pin="V+" pad="8"/>
-</connects>
-<technologies>
-<technology name="LM"/>
-<technology name="NE"/>
-<technology name="SE"/>
-<technology name="UA"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12643,7 +12681,7 @@ NS Package M08A</description>
 <part name="C3" library="adafruit" deviceset="C-US" device="025-025X050" value="10nF"/>
 <part name="C4" library="adafruit" deviceset="C-US" device="025-025X050" value="10nF"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH"/>
-<part name="IC2" library="linear" deviceset="*555" device="N" technology="NE" value="555"/>
+<part name="555" library="SparkFun-AnalogIC" deviceset="NE555" device="KIT" value="555"/>
 </parts>
 <sheets>
 <sheet>
@@ -12670,14 +12708,15 @@ NS Package M08A</description>
 <instance part="C3" gate="G$1" x="55.88" y="-27.94"/>
 <instance part="C4" gate="G$1" x="82.55" y="-27.94"/>
 <instance part="J2" gate="G$1" x="7.62" y="20.32"/>
-<instance part="IC2" gate="A" x="69.85" y="-6.35"/>
+<instance part="555" gate="G$1" x="69.85" y="-6.35"/>
 </instances>
 <busses>
-<bus name="556IC[1..14],GND,DIS,THR,CV,RST,OUT,TRIG,VCC,DIS2,THR2,CV2,RST2,OUT2,TRIG2,+5V">
+<bus name="GND,DIS,THR_TRIG,CV,RST,OUT,VCC,DIS2,CV2,RST2,OUT2,THR2_TRIG2,+5V">
 <segment>
-<wire x1="52.07" y1="-21.59" x2="52.07" y2="29.21" width="0.762" layer="92"/>
+<wire x1="52.07" y1="-21.59" x2="52.07" y2="39.37" width="0.762" layer="92"/>
 <wire x1="52.07" y1="-21.59" x2="86.36" y2="-21.59" width="0.762" layer="92"/>
-<wire x1="86.36" y1="-21.59" x2="86.36" y2="31.75" width="0.762" layer="92"/>
+<wire x1="86.36" y1="-21.59" x2="86.36" y2="39.37" width="0.762" layer="92"/>
+<wire x1="52.07" y1="39.37" x2="86.36" y2="39.37" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -12719,12 +12758,16 @@ NS Package M08A</description>
 <junction x="69.85" y="-35.56"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="GND"/>
-<wire x1="59.69" y1="-13.97" x2="52.07" y2="-13.97" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="55.88" y1="13.97" x2="52.07" y2="13.97" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="555" gate="G$1" pin="/RES"/>
+<wire x1="80.01" y1="-1.27" x2="86.36" y2="-1.27" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="555" gate="G$1" pin="GND"/>
+<wire x1="80.01" y1="-13.97" x2="86.36" y2="-13.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIS" class="0">
@@ -12741,33 +12784,33 @@ NS Package M08A</description>
 <junction x="38.1" y="17.78"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="DIS"/>
-<wire x1="80.01" y1="-3.81" x2="86.36" y2="-3.81" width="0.1524" layer="91"/>
+<pinref part="555" gate="G$1" pin="DIS"/>
+<wire x1="59.69" y1="-6.35" x2="52.07" y2="-6.35" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="THR" class="0">
+<net name="THR_TRIG" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="THR"/>
 <wire x1="55.88" y1="26.67" x2="52.07" y2="26.67" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="THR"/>
-<wire x1="80.01" y1="-8.89" x2="86.36" y2="-8.89" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="38.1" y1="-1.27" x2="38.1" y2="-6.35" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-6.35" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="52.07" y1="-6.35" x2="38.1" y2="-6.35" width="0.1524" layer="91"/>
-<junction x="38.1" y="-6.35"/>
+<wire x1="38.1" y1="-1.27" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="-10.16" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="38.1" y="-10.16"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="TRIG"/>
 <wire x1="55.88" y1="16.51" x2="52.07" y2="16.51" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="TR"/>
+<pinref part="555" gate="G$1" pin="TRI"/>
+<wire x1="59.69" y1="-13.97" x2="52.07" y2="-13.97" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="555" gate="G$1" pin="TRE"/>
 <wire x1="59.69" y1="1.27" x2="52.07" y2="1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12777,25 +12820,20 @@ NS Package M08A</description>
 <wire x1="55.88" y1="24.13" x2="52.07" y2="24.13" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="CV"/>
-<wire x1="59.69" y1="-8.89" x2="52.07" y2="-8.89" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="-21.59" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="555" gate="G$1" pin="CON"/>
+<wire x1="80.01" y1="-11.43" x2="86.36" y2="-11.43" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="+5V" class="0">
+<net name="VCC+" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RST"/>
 <wire x1="55.88" y1="21.59" x2="52.07" y2="21.59" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="R"/>
-<wire x1="59.69" y1="-3.81" x2="52.07" y2="-3.81" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="52.07" y1="27.94" x2="49.53" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 <wire x1="19.05" y1="33.02" x2="19.05" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="19.05" y1="35.56" x2="19.05" y2="44.45" width="0.1524" layer="91"/>
@@ -12807,8 +12845,8 @@ NS Package M08A</description>
 <wire x1="19.05" y1="44.45" x2="27.94" y2="44.45" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="44.45" x2="38.1" y2="44.45" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="44.45" x2="49.53" y2="44.45" width="0.1524" layer="91"/>
-<wire x1="49.53" y1="44.45" x2="93.98" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="44.45" x2="69.85" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="44.45" x2="93.98" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="44.45" x2="102.87" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="102.87" y1="44.45" x2="102.87" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -12820,8 +12858,8 @@ NS Package M08A</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="30.48" x2="93.98" y2="44.45" width="0.1524" layer="91"/>
 <junction x="93.98" y="44.45"/>
-<wire x1="49.53" y1="27.94" x2="49.53" y2="44.45" width="0.1524" layer="91"/>
-<junction x="49.53" y="44.45"/>
+<wire x1="69.85" y1="39.37" x2="69.85" y2="44.45" width="0.1524" layer="91"/>
+<junction x="69.85" y="44.45"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RST2"/>
@@ -12832,18 +12870,14 @@ NS Package M08A</description>
 <wire x1="83.82" y1="31.75" x2="86.36" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="V+"/>
-<wire x1="80.01" y1="-13.97" x2="86.36" y2="-13.97" width="0.1524" layer="91"/>
+<pinref part="555" gate="G$1" pin="VCC+"/>
+<wire x1="80.01" y1="1.27" x2="86.36" y2="1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="556IC5" class="0">
+<net name="OUT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
 <wire x1="55.88" y1="19.05" x2="52.07" y2="19.05" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="A" pin="Q"/>
-<wire x1="80.01" y1="1.27" x2="86.36" y2="1.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -12853,8 +12887,12 @@ NS Package M08A</description>
 <wire x1="52.07" y1="11.43" x2="27.94" y2="11.43" width="0.1524" layer="91"/>
 <junction x="27.94" y="11.43"/>
 </segment>
+<segment>
+<pinref part="555" gate="G$1" pin="OUT"/>
+<wire x1="80.01" y1="-6.35" x2="86.36" y2="-6.35" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="TRIG2" class="0">
+<net name="THR2_TRIG2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="TRIG2"/>
 <wire x1="83.82" y1="16.51" x2="86.36" y2="16.51" width="0.1524" layer="91"/>
@@ -12866,13 +12904,13 @@ NS Package M08A</description>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="93.98" y1="0" x2="93.98" y2="-11.43" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-11.43" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-11.43" x2="93.98" y2="-11.43" width="0.1524" layer="91"/>
-<junction x="93.98" y="-11.43"/>
+<wire x1="93.98" y1="0" x2="93.98" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-19.05" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-19.05" x2="93.98" y2="-19.05" width="0.1524" layer="91"/>
+<junction x="93.98" y="-19.05"/>
 </segment>
 </net>
-<net name="556IC9" class="0">
+<net name="OUT2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="OUT2"/>
 <wire x1="83.82" y1="19.05" x2="86.36" y2="19.05" width="0.1524" layer="91"/>
@@ -12886,7 +12924,7 @@ NS Package M08A</description>
 <junction x="102.87" y="12.7"/>
 </segment>
 </net>
-<net name="556IC11" class="0">
+<net name="CV2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CV2"/>
 <wire x1="83.82" y1="24.13" x2="86.36" y2="24.13" width="0.1524" layer="91"/>
@@ -12896,7 +12934,7 @@ NS Package M08A</description>
 <wire x1="82.55" y1="-21.59" x2="82.55" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="556IC13" class="0">
+<net name="DIS2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DIS2"/>
 <wire x1="83.82" y1="29.21" x2="86.36" y2="29.21" width="0.1524" layer="91"/>
